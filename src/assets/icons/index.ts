@@ -7,3 +7,4 @@ export { default as GoStudentLogin } from "./GoStudentLogin.svg";
 export { default as Login } from "./Login.svg";
 export { default as LoginLogo } from "./LoginLogo.svg";
 export { default as HeaderLogo } from "./HeaderLogo.svg";
+export { default as Bar } from "./Bar.svg";
