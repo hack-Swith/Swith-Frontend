@@ -1,10 +1,10 @@
 import { styled } from "styled-components";
 import { Bar } from "../../../assets/icons";
-import { StudentChecklistL } from "../../contance";
+import { StudentRequestL } from "../../contance";
 import Header from "../../header";
-import List from "./studentChecklistList";
+import RequestList from "./studentRequestList";
 
-const StudentSafetyChecklist = () => {
+const StudentRequest = () => {
   return (
     <Container>
       <Header />
@@ -25,9 +25,13 @@ const StudentSafetyChecklist = () => {
           <RequestButton>상담 요청서</RequestButton>
           <Line></Line>
         </div>
-        <CheckStartButton>안전점검 시작하기</CheckStartButton>
-        {StudentChecklistL.map((item) => (
-          <List date={item.date} state={item.state} />
+        <CheckStartButton>상담 요청서 작성하기</CheckStartButton>
+        {StudentRequestL.map((item) => (
+          <RequestList
+            reason={item.reason}
+            date={item.date}
+            state={item.state}
+          />
         ))}
       </Content>
     </Container>
@@ -94,6 +98,19 @@ const ChecklistButton = styled.button`
   height: 50px;
   border: none;
   border-radius: 10px 10px 0px 0px;
+  border-bottom: 2px solid #d3d3d3;
+  background: rgba(255, 255, 255, 0);
+  color: var(--gray-03, #505050);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+`;
+
+const RequestButton = styled.button`
+  width: 158px;
+  height: 50px;
+  border: none;
+  border-radius: 10px 10px 0px 0px;
   border-top: 2px solid #d3d3d3;
   border-right: 2px solid #d3d3d3;
   border-left: 2px solid #d3d3d3;
@@ -105,19 +122,6 @@ const ChecklistButton = styled.button`
   margin-top: 1px;
 `;
 
-const RequestButton = styled.button`
-  width: 158px;
-  height: 50px;
-  border: none;
-  border-radius: 10px 10px 0px 0px;
-  border-bottom: 2px solid #d3d3d3;
-  background: rgba(255, 255, 255, 0);
-  color: var(--gray-03, #505050);
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 700;
-`;
-
 const Line = styled.div`
   width: 672px;
   height: 2px;
@@ -127,9 +131,9 @@ const Line = styled.div`
 
 const CheckStartButton = styled.button`
   margin-top: 20px;
-  margin-left: 804px;
+  margin-left: 765px;
   margin-bottom: 35px;
-  width: 183px;
+  width: 223px;
   height: 48px;
   border: none;
   border-radius: 10px;
@@ -140,4 +144,4 @@ const CheckStartButton = styled.button`
   font-weight: 700;
 `;
 
-export default StudentSafetyChecklist;
+export default StudentRequest;
