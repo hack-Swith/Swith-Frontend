@@ -3,6 +3,7 @@ import LoginMainPage from "../pages/LoginMainPage";
 import MainPage from "../pages/MainPage";
 import ReadRequestPage from "../pages/ReadRequestPage";
 import StudentLoginPage from "../pages/StudentLoginPage";
+import StudentSafetyChecklistPage from "../pages/StudentSafetyChecklistPage";
 import TeacherLoginPage from "../pages/TeacherLoginPage";
 import WritingRequestPage from "../pages/WritingRequestPage";
 
@@ -16,6 +17,10 @@ function Router() {
         <Route path="/studentLogin" element={<StudentLoginPage />} />
         <Route path="/writingRequest" element={<WritingRequestPage />} />
         <Route path="/readRequest" element={<ReadRequestPage />} />
+        <Route
+          path="/studentSafetyChecklist"
+          element={<StudentSafetyChecklistPage />}
+        />
       </Routes>
     </BrowserRouter>
   );
