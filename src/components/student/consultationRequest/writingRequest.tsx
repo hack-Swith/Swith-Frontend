@@ -1,16 +1,16 @@
 import { styled } from "styled-components";
 import Header from "../../header";
 
-const WritingDiary = () => {
+const writingRequest = () => {
   return (
     <Container>
       <Header />
-      <TitleText>현상실습 일지 작성</TitleText>
+      <TitleText>상담 요청서 작성</TitleText>
       <Content>
-        <p>작업 내용</p>
-        <TitleInput placeholder="작업 내용을 작성해주세요." />
+        <p>요청 사유</p>
+        <TitleInput placeholder="요청 사유를 작성해주세요." />
         <p>상세 내용</p>
-        <MainInput placeholder="내용을 작성해주세요." />
+        <MainInput placeholder="상세 내용을 작성해주세요." />
         <EndButton>완료</EndButton>
       </Content>
     </Container>
@@ -93,4 +93,4 @@ const EndButton = styled.button`
   margin-top: 50px;
 `;
 
-export default WritingDiary;
+export default writingRequest;
