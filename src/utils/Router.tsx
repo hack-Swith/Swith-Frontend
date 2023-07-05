@@ -7,6 +7,7 @@ import StudentRequestPage from "../pages/StudentRequestPage";
 import StudentSafetyChecklistPage from "../pages/StudentSafetyChecklistPage";
 import TeacherLoginPage from "../pages/TeacherLoginPage";
 import WritingRequestPage from "../pages/WritingRequestPage";
+import WritingSafetyChecklistPage from "../pages/WritingSafetyChecklistPage";
 
 function Router() {
   return (
@@ -23,6 +24,10 @@ function Router() {
           element={<StudentSafetyChecklistPage />}
         />
         <Route path="/studentRequest" element={<StudentRequestPage />} />
+        <Route
+          path="/writingSafetyChecklist"
+          element={<WritingSafetyChecklistPage />}
+        />
       </Routes>
     </BrowserRouter>
   );
