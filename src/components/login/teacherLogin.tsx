@@ -16,8 +16,8 @@ const TeacherLogin = () => {
           </InputSection>
           <LoginButton>로그인</LoginButton>
           <CheckSection>
-            <CheckText>교사인가요?</CheckText>
-            <LinkLoginText>교사 로그인하기</LinkLoginText>
+            <CheckText>학생인가요?</CheckText>
+            <LinkLoginText>학생 로그인하기</LinkLoginText>
           </CheckSection>
         </Content>
       </LoginForm>
