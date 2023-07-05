@@ -35,7 +35,6 @@ const Header = styled.div`
   p {
     color: #000;
     font-size: 50px;
-    font-family: Pretendard;
     font-style: normal;
     font-weight: 600;
   }
@@ -71,7 +70,6 @@ const GoLoginButton = styled.button`
   color: #fff;
   text-align: center;
   font-size: 25px;
-  font-family: Pretendard;
   font-style: normal;
   font-weight: 600;
 `;

@@ -49,7 +49,6 @@ const Header = styled.div`
   p {
     color: #fff;
     font-size: 25px;
-    font-family: Pretendard;
     font-style: normal;
     font-weight: 600;
   }
@@ -69,7 +68,6 @@ const MainLeft = styled.div`
 const TitleText = styled.div`
   color: #fff;
   font-size: 50px;
-  font-family: Pretendard;
   font-style: normal;
   font-weight: 700;
   margin-bottom: 16px;
@@ -78,7 +76,6 @@ const TitleText = styled.div`
 const MainText = styled.div`
   color: #fff;
   font-size: 25px;
-  font-family: Pretendard;
   font-style: normal;
   font-weight: 500;
   margin-bottom: 75px;
@@ -87,7 +84,6 @@ const MainText = styled.div`
 const GoLoginButton = styled.button`
   color: #fff;
   font-size: 25px;
-  font-family: Pretendard;
   font-style: normal;
   font-weight: 600;
   text-align: center;
