@@ -8,6 +8,8 @@ import StudentLoginPage from "../pages/StudentLoginPage";
 import StudentRequestPage from "../pages/StudentRequestPage";
 import StudentSafetyChecklistPage from "../pages/StudentSafetyChecklistPage";
 import TeacherLoginPage from "../pages/TeacherLoginPage";
+import TeacherRequestPage from "../pages/TeacherRequestPage";
+import TeacherSafetyChecklistPage from "../pages/TeacherSafetyChecklistPage";
 import WritingRequestPage from "../pages/WritingRequestPage";
 import WritingSafetyChecklistPage from "../pages/WritingSafetyChecklistPage";
 
@@ -37,6 +39,11 @@ function Router() {
         <Route
           path="/focusConsultationRequest"
           element={<FocusConsultationRequestPage />}
+        />
+        <Route path="/teacherRequest" element={<TeacherRequestPage />} />
+        <Route
+          path="/teacherSafetyChecklist"
+          element={<TeacherSafetyChecklistPage />}
         />
       </Routes>
     </BrowserRouter>

@@ -1,6 +1,6 @@
 import { styled } from "styled-components";
 import { Bar } from "../../../assets/icons";
-import { StudentChecklistL } from "../../contance";
+import { StudentChecklistL } from "../../contants";
 import Header from "../../header";
 import List from "./studentChecklistList";
 
