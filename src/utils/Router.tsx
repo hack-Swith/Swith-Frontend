@@ -1,4 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import FocusConsultationRequestPage from "../pages/FocusConsultationRequestPage";
 import LoginMainPage from "../pages/LoginMainPage";
 import MainPage from "../pages/MainPage";
 import ReadRequestPage from "../pages/ReadRequestPage";
@@ -32,6 +33,10 @@ function Router() {
         <Route
           path="/readSafetyChecklist"
           element={<ReadSafetyChecklistPage />}
+        />
+        <Route
+          path="/focusConsultationRequest"
+          element={<FocusConsultationRequestPage />}
         />
       </Routes>
     </BrowserRouter>
