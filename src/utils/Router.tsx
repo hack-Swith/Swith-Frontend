@@ -6,6 +6,7 @@ import ReadRequestPage from "../pages/ReadRequestPage";
 import ReadSafetyChecklistPage from "../pages/ReadSafetyChecklistPage";
 import StudentLoginPage from "../pages/StudentLoginPage";
 import StudentRequestPage from "../pages/StudentRequestPage";
+import StudentRequestPage2 from "../pages/StudentRequestPage2";
 import StudentSafetyChecklistPage from "../pages/StudentSafetyChecklistPage";
 import TeacherLoginPage from "../pages/TeacherLoginPage";
 import TeacherRequestPage from "../pages/TeacherRequestPage";
@@ -45,6 +46,7 @@ function Router() {
           path="/teacherSafetyChecklist"
           element={<TeacherSafetyChecklistPage />}
         />
+        <Route path="/studentRequest2" element={<StudentRequestPage2 />} />
       </Routes>
     </BrowserRouter>
   );

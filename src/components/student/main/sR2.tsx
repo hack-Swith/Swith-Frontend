@@ -2,24 +2,25 @@ import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { Bar } from "../../../assets/icons";
 import { StudentRequestL } from "../../contance";
+
 import Header from "../../header";
 import RequestList from "./studentRequestList";
 
-const StudentRequest = () => {
+const SR2 = () => {
   const navigate = useNavigate();
 
   return (
     <Container>
       <Header />
-      <TitleText>최희</TitleText>
+      <TitleText>홍길동</TitleText>
       <Content>
         <InfoSection>
           <img src={Bar} alt="" />
           <div>
-            <CompanyNameText>(주) Swith company</CompanyNameText>
+            <CompanyNameText>회사 이름</CompanyNameText>
             <div style={{ display: "flex", gap: "20px" }}>
-              <DepartmentText>정보보안과</DepartmentText>
-              <ClassNumberText>4반 17번</ClassNumberText>
+              <DepartmentText>소프트웨어개발과</DepartmentText>
+              <ClassNumberText>1반 1번</ClassNumberText>
             </div>
           </div>
         </InfoSection>
@@ -151,4 +152,4 @@ const CheckStartButton = styled.button`
   font-weight: 700;
 `;
 
-export default StudentRequest;
+export default SR2;

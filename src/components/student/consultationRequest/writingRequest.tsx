@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import Header from "../../header";
 
-const writingRequest = () => {
+const WritingRequest = () => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <Header />
@@ -11,7 +14,7 @@ const writingRequest = () => {
         <TitleInput placeholder="요청 사유를 작성해주세요." />
         <p>상세 내용</p>
         <MainInput placeholder="상세 내용을 작성해주세요." />
-        <EndButton>완료</EndButton>
+        <EndButton onClick={() => navigate("/studentRequest2")}>완료</EndButton>
       </Content>
     </Container>
   );
@@ -93,4 +96,4 @@ const EndButton = styled.button`
   margin-top: 50px;
 `;
 
-export default writingRequest;
+export default WritingRequest;

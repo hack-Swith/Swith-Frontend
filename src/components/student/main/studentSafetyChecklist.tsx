@@ -1,31 +1,38 @@
+import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { Bar } from "../../../assets/icons";
-import { StudentChecklistL } from "../../contants";
+import { StudentChecklistL } from "../../contance";
 import Header from "../../header";
 import List from "./studentChecklistList";
 
 const StudentSafetyChecklist = () => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <Header />
-      <TitleText>홍길동</TitleText>
+      <TitleText>최희</TitleText>
       <Content>
         <InfoSection>
           <img src={Bar} alt="" />
           <div>
-            <CompanyNameText>회사 이름</CompanyNameText>
+            <CompanyNameText>(주) Swith company</CompanyNameText>
             <div style={{ display: "flex", gap: "20px" }}>
-              <DepartmentText>소프트웨어개발과</DepartmentText>
-              <ClassNumberText>1반 1번</ClassNumberText>
+              <DepartmentText>정보보안과</DepartmentText>
+              <ClassNumberText>4반 17번</ClassNumberText>
             </div>
           </div>
         </InfoSection>
         <div>
           <ChecklistButton>안전 점검표</ChecklistButton>
-          <RequestButton>상담 요청서</RequestButton>
+          <RequestButton onClick={() => navigate("/studentRequest")}>
+            상담 요청서
+          </RequestButton>
           <Line></Line>
         </div>
-        <CheckStartButton>안전점검 시작하기</CheckStartButton>
+        <CheckStartButton onClick={() => navigate("/writingSafetyChecklist")}>
+          안전점검 시작하기
+        </CheckStartButton>
         {StudentChecklistL.map((item) => (
           <List date={item.date} state={item.state} />
         ))}

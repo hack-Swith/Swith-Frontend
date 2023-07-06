@@ -11,14 +11,17 @@ const readRequest = () => {
         <InfoSection>
           <img src={Bar} alt="" />
           <div>
-            <CompanyNameText>회사 이름</CompanyNameText>
-            <DateText>2023년 07월 03일</DateText>
+            <CompanyNameText>(주) Swith company</CompanyNameText>
+            <DateText>2023년 07월 06일</DateText>
           </div>
         </InfoSection>
         <p>요청 사유</p>
-        <TitleInput placeholder="요청 사유를 작성해주세요." />
+        <TitleInput placeholder="요청 사유를 작성해주세요처음에 안내 받았던 업무 내용이 달라요." />
         <p>상세 내용</p>
-        <MainInput placeholder="상세 내용을 작성해주세요." />
+        <MainInput
+          placeholder="처음 안내 받은 업무 내용은 백엔드 서버를 개발하는 일이었는데, 회사에 가보니 개발 업무를 시키지 않고 문서작업만 시켜서
+          고민입니다ㅠㅠ 초반 회사에 가서 업무를 받을 때, 처음 안내받은 업무와 다른 일을 하는 경우도 있나요? 너무 답답합니다."
+        />
       </Content>
     </Container>
   );
@@ -83,7 +86,7 @@ const TitleInput = styled.input`
   font-weight: 500;
   padding: 0 25px;
   &::placeholder {
-    color: #c9c9c9;
+    color: #505050;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
@@ -103,7 +106,7 @@ const MainInput = styled.textarea`
   padding: 20px 25px;
   &::placeholder {
     position: absolute;
-    color: #c9c9c9;
+    color: #505050;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;

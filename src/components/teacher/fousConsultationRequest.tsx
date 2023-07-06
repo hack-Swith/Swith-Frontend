@@ -14,14 +14,17 @@ const FocusConsultationRequest = () => {
         <InfoSection>
           <img src={Bar} alt="" />
           <div>
-            <CompanyNameText>회사 이름</CompanyNameText>
-            <DateText>2023년 07월 03일</DateText>
+            <CompanyNameText>(주) Swith company</CompanyNameText>
+            <DateText>2023년 07월 06일</DateText>
           </div>
         </InfoSection>
         <p>요청 사유</p>
-        <TitleInput placeholder="어떠한 사유 때문에 상담을 신청합니다." />
+        <TitleInput placeholder="처음에 안내 받았던 업무 내용이 달라요." />
         <p>상세 내용</p>
-        <MainInput placeholder="어떠한 일이 있었습니다 ......" />
+        <MainInput
+          placeholder="처음 안내 받은 업무 내용은 백엔드 서버를 개발하는 일이었는데, 회사에 가보니 개발 업무를 시키지 않고 문서작업만 시켜서
+          고민입니다ㅠㅠ 초반 회사에 가서 업무를 받을 때, 처음 안내받은 업무와 다른 일을 하는 경우도 있나요? 너무 답답합니다."
+        />
       </Content>
     </Container>
   );

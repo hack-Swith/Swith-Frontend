@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { Login, LoginLogo } from "../../assets/icons";
 
 const StudentLogin = () => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <LoginForm>
@@ -10,14 +13,18 @@ const StudentLogin = () => {
           <LogoImg src={LoginLogo} />
           <InputSection>
             <p>아이디</p>
-            <Input />
+            <Input type="text" />
             <p>비밀번호</p>
-            <Input />
+            <Input type="password" />
           </InputSection>
-          <LoginButton>로그인</LoginButton>
+          <LoginButton onClick={() => navigate("/studentSafetyChecklist")}>
+            로그인
+          </LoginButton>
           <CheckSection>
             <CheckText>교사인가요?</CheckText>
-            <LinkLoginText>교사 로그인하기</LinkLoginText>
+            <LinkLoginText onClick={() => navigate("/teacherLogin")}>
+              교사 로그인하기
+            </LinkLoginText>
           </CheckSection>
         </Content>
       </LoginForm>

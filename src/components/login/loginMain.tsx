@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { BlueLogo, GoStudentLogin, GoTeacherLogin } from "../../assets/icons";
 
 const LoginMain = () => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <Header>
@@ -11,11 +14,15 @@ const LoginMain = () => {
       <MainSection>
         <TeacherLoginForm>
           <img src={GoTeacherLogin} alt="" />
-          <GoLoginButton>교사 로그인 하러가기</GoLoginButton>
+          <GoLoginButton onClick={() => navigate("/teacherLogin")}>
+            교사 로그인 하러가기
+          </GoLoginButton>
         </TeacherLoginForm>
         <StudentLoginForm>
           <img src={GoStudentLogin} alt="" />
-          <GoLoginButton>학생 로그인 하러가기</GoLoginButton>
+          <GoLoginButton onClick={() => navigate("/studentLogin")}>
+            학생 로그인 하러가기
+          </GoLoginButton>
         </StudentLoginForm>
       </MainSection>
     </Container>

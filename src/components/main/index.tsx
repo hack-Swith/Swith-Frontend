@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import { Logo, MainCheck } from "../../assets/icons";
 
 const Main = () => {
+  const navigate = useNavigate();
+
   return (
     <Container>
       <Header>
@@ -22,7 +25,9 @@ const Main = () => {
             <br />
             오늘도 swith해요
           </MainText>
-          <GoLoginButton>로그인 하러가기</GoLoginButton>
+          <GoLoginButton onClick={() => navigate("/loginMain")}>
+            로그인 하러가기
+          </GoLoginButton>
         </MainLeft>
         <MainRight>
           <img src={MainCheck} alt="" />

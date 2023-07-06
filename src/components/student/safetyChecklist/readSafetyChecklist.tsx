@@ -1,9 +1,6 @@
 import { styled } from "styled-components";
-import { Bar } from "../../../assets/icons";
+import { Bar, Checklist } from "../../../assets/icons";
 import Header from "../../header";
-import EnvironmentCultureCheck from "./environmentCultureCheck";
-import FollowSafetyRuleCheck from "./followSafetyRuleCheck";
-import RiskManagementCheck from "./riskManagementCheck";
 
 const ReadSafetyChecklist = () => {
   return (
@@ -25,12 +22,16 @@ const ReadSafetyChecklist = () => {
           </div>
         </InfoSection>
       </TextSection>
-      <EnvironmentCultureCheck />
-      <RiskManagementCheck />
-      <FollowSafetyRuleCheck />
+      <Contain>
+        <img src={Checklist} alt="" />
+      </Contain>
     </>
   );
 };
+
+const Contain = styled.div`
+  padding: 100px 250px;
+`;
 
 const TextSection = styled.div`
   padding: 73px 351px 75px 351px;

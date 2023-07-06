@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { StudentCheckListProps } from "../../models/List";
 
 const CheckList = ({ date, state }: StudentCheckListProps) => {
+  const navigate = useNavigate();
+
   return (
     <>
-      <ListBox>
+      <ListBox onClick={() => navigate("/readSafetyChecklist")}>
         <DateT>{date}</DateT>
         <StateBox>{state}</StateBox>
       </ListBox>

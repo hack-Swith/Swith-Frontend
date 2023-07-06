@@ -1,13 +1,15 @@
+import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { HeaderLogo } from "../../assets/icons";
 
 const Header = () => {
+  const navigate = useNavigate();
   return (
     <HeaderSection>
       <LogoSection>
         <img src={HeaderLogo} alt="" />
-        <LogoText>swith</LogoText>
-        <LogoutText>로그아웃</LogoutText>
+        <LogoText onClick={() => navigate("/")}>swith</LogoText>
+        <LogoutText onClick={() => navigate("/loginMain")}>로그아웃</LogoutText>
       </LogoSection>
     </HeaderSection>
   );

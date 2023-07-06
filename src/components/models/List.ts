@@ -19,3 +19,11 @@ export interface NotFinishStudentListProps {
   name: string;
   info: string;
 }
+
+export interface RequestListProps {
+  reason: string;
+  name: string;
+  Id: string;
+  date: string;
+  state: string;
+}

@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { Bar } from "../../../assets/icons";
-import { StudentRequestL } from "../../contance";
+import { StudentRequestL2 } from "../../contance";
 import Header from "../../header";
 import RequestList from "./studentRequestList";
 
-const StudentRequest = () => {
+const StudentRequest2 = () => {
   const navigate = useNavigate();
 
   return (
@@ -33,7 +33,7 @@ const StudentRequest = () => {
         <CheckStartButton onClick={() => navigate("/writingRequest")}>
           상담 요청서 작성하기
         </CheckStartButton>
-        {StudentRequestL.map((item) => (
+        {StudentRequestL2.map((item) => (
           <RequestList
             reason={item.reason}
             date={item.date}
@@ -151,4 +151,4 @@ const CheckStartButton = styled.button`
   font-weight: 700;
 `;
 
-export default StudentRequest;
+export default StudentRequest2;

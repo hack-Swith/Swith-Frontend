@@ -1,10 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import { styled } from "styled-components";
 import { StudentRequestListProps } from "../../models/List";
 
 const RequestList = ({ reason, date, state }: StudentRequestListProps) => {
+  const navigate = useNavigate();
+
   return (
     <>
-      <ListBox>
+      <ListBox onClick={() => navigate("/readRequest")}>
         <ReasonT>{reason}</ReasonT>
         <div style={{ display: "flex", gap: "64px" }}>
           <DateT>{date}</DateT>
@@ -45,7 +48,7 @@ const StateBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #8feb47;
+  color: #eb4646;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
