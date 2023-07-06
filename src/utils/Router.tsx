@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import LoginMainPage from "../pages/LoginMainPage";
 import MainPage from "../pages/MainPage";
 import ReadRequestPage from "../pages/ReadRequestPage";
+import ReadSafetyChecklistPage from "../pages/ReadSafetyChecklistPage";
 import StudentLoginPage from "../pages/StudentLoginPage";
 import StudentRequestPage from "../pages/StudentRequestPage";
 import StudentSafetyChecklistPage from "../pages/StudentSafetyChecklistPage";
@@ -27,6 +28,10 @@ function Router() {
         <Route
           path="/writingSafetyChecklist"
           element={<WritingSafetyChecklistPage />}
+        />
+        <Route
+          path="/readSafetyChecklist"
+          element={<ReadSafetyChecklistPage />}
         />
       </Routes>
     </BrowserRouter>
